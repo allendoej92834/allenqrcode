@@ -40,6 +40,9 @@
      <input type="text" placeholder="Age." id="age" name="age">
      <input type="text" placeholder="Phone No." id="phone" name="mobile">
 
+
+     <span id="text" name="full_name"></span>
+
      <div style="padding-top: 10px; padding-left: 55px;">
 
         <button type="button" class="button button1"
@@ -206,6 +209,23 @@
         $('.qr-code').attr('src', finalURL);
       });
     });
+
+    $().ready = function() {
+    $('#full_name').show();
+    $('#address').show();
+    $('#age').show();
+    $('#phone').show();
+    $('#generate').show();
+    
+    $("#driver").click(function() {
+        $('#full_name').toggle();
+        $('#address').toggle();
+        $('#age').toggle();
+        $('#phone').toggle();
+        $('#generate').toggle();
+    });
+
+    }();
   </script>
 </html>
 
