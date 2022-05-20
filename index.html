@@ -41,7 +41,7 @@
      <input type="text" placeholder="Phone No." id="phone" name="mobile">
 
 
-     <span class="output"></span>
+     <span class="output" id="fullnamecopy"></span>
 
 
      <div style="padding-top: 10px; padding-left: 55px;">
@@ -231,6 +231,11 @@ body {
     });
 
     }();
+
+    function ver() {
+      document.getElementById("fullnamecopy").textContent = document.getElementById("full_name").value;
+      
+    }
 
 
     var fullname  = document.querySelector("[id=full_name]"),
