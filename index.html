@@ -41,15 +41,18 @@
      <input type="text" placeholder="Address" id="address" name="address">
      <input type="text" placeholder="Age." id="age" name="age">
      <input type="text" placeholder="Phone No." id="phone" name="mobile">
+      </div>
+    </div>
 
-     <span class="output" id="fullnamecopy"></span><br>
-     <span class="output" id="addresscopy"></span><br>
-     <span class="output" id="agecopy"></span><br>
-     <span class="output" id="phonecopy"></span>
-
+    <div class="spancenter" id="hidden">
+      <span class="output" id="fullnamecopy"></span><br>
+      <span class="output" id="addresscopy"></span><br>
+      <span class="output" id="agecopy"></span><br>
+      <span class="output" id="phonecopy"></span>
+    </div> 
      
 
-     <div style="padding-top: 10px; padding-left: 55px;">
+     <div style="padding-left: 110px;">
 
         <button type="button" onclick="ver()" class="button button1"
             id="generate">
@@ -183,8 +186,11 @@ body {
     overscroll-behavior-y: contain;
 }
 
-.output {
-  font-size: 15px;
+
+.spancenter {
+  text-align: center;
+  font-size: 20px ;
+  
 }
 
 </style>
@@ -231,12 +237,24 @@ body {
     $('#phone').show();
     $('#generate').show();
     
+    // $('#fullnamecopy').hide();
+    // $('#addresscopy').hide();
+    // $('#agecopy').hide();
+    // $('#phonecopy').hide();
+    $('#hidden').hide();
+    
     $("#generate").click(function() {
         $('#full_name').toggle();
         $('#address').toggle();
         $('#age').toggle();
         $('#phone').toggle();
         $('#generate').toggle();
+
+        // $('#fullnamecopy').toggle();
+        // $('#addresscopy').toggle();
+        // $('#agecopy').toggle();
+        // $('#phonecopy').toggle();
+        $('#hidden').toggle();
     });
 
     }();
