@@ -41,7 +41,8 @@
      <input type="text" placeholder="Phone No." id="phone" name="mobile">
 
 
-     <span id="text" name="full_name"></span>
+     <span class="output"></span>
+
 
      <div style="padding-top: 10px; padding-left: 55px;">
 
@@ -226,6 +227,16 @@
     });
 
     }();
+
+
+    var fullname  = document.querySelector("[id=full_name]"),
+    output = document.querySelector(".output");
+
+    function keydownHandler() {
+      output.innerHTML = this.value;
+    }
+
+    input.addEventListener("fullname", keydownHandler);
   </script>
 </html>
 
