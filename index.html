@@ -22,7 +22,7 @@
    <div class="container__info">
      <div class="row">
        <div class="column">
-        <span class="output" id="fullnamecopy"></span>
+        
 
         <span><img src="images/allen.jpeg" class="bottom center" style="width: 80px ; padding-top: 10px"></span>
       </div>
@@ -42,6 +42,10 @@
      <input type="text" placeholder="Age." id="age" name="age">
      <input type="text" placeholder="Phone No." id="phone" name="mobile">
 
+     <span class="output" id="fullnamecopy"></span>
+     <span class="output" id="addresscopy"></span>
+     <span class="output" id="agecopy"></span>
+     <span class="output" id="phonecopy"></span>
 
      
 
@@ -235,6 +239,9 @@ body {
 
     function ver() {
       document.getElementById("fullnamecopy").textContent = document.getElementById("full_name").value;
+      document.getElementById("addresscopy").textContent = document.getElementById("address").value;
+      document.getElementById("agecopy").textContent = document.getElementById("age").value;
+      document.getElementById("phonecopy").textContent = document.getElementById("phone").value;
       
     }
 
