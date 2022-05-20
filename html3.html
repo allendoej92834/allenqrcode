@@ -1,0 +1,340 @@
+<!-- <!DOCTYPE html>
+<html>
+  
+<head>
+ 
+  <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  
+  <title>QR Code Generator</title>
+</head>
+  
+<body> -->
+  <!-- <div class="container-fluid">
+    
+    <div class="text-center">
+  
+    
+       <div>
+          <img src="images/allen.jpeg" class="bottom center" style="width: 300px ;">
+          
+            <img src=
+                  "https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+              class="qr-code img-thumbnail img-responsive inner-image center"/>
+        </div>
+       
+    </div> -->
+  
+    <!-- <div class="form-horizontal">
+      <div class="form-group">
+       
+        <div class="col-sm-10 boxes container-fluid">
+  
+              <form action=""style=" width: 50vw; margin-left : 25vw;">
+                    <input type="text" size="60" 
+                      maxlength="60" class="form-control"
+                      id="full_name" placeholder="Enter Full Name" />
+
+                      <input type="text" size="60" 
+                      maxlength="60" class="form-control"
+                      id="address" placeholder="Enter Address" />
+
+                      <input type="text" size="60" 
+                      maxlength="60" class="form-control"
+                      id="age" placeholder="Enter Age" />
+                  </div>
+                </div>
+                
+                    <button type="button" style=" width: 50vw; margin-left : 25vw;"
+                       id="generate">
+                      Generate
+                    </button>
+              </form>
+        
+      </div> -->
+    <!-- </div>
+  </div> -->
+  <!-- <script src=
+    "https://code.jquery.com/jquery-3.5.1.js">
+  </script> -->
+  
+  <!-- <script>
+    // Function to HTML encode the text
+    // This creates a new hidden element,
+    // inserts the given text into it 
+    // and outputs it out as HTML
+    function htmlEncode(value) {
+      return $('<div/>').text(value)
+        .html();
+    }
+  
+    $(function () {
+  
+      // Specify an onclick function
+      // for the generate button
+      $('#generate').click(function () {
+  
+        // Generate the link that would be
+        // used to generate the QR Code
+        // with the given data 
+        let finalURL =
+          'https://chart.googleapis.com/chart?cht=qr&chl=' +
+          htmlEncode($('#full_name').val()) + htmlEncode($('#address').val()) + htmlEncode($('#age').val()) +
+          '&chs=160x160&chld=L|0'
+
+        // Replace the src of the image with
+        // the QR code image
+        $('.qr-code').attr('src', finalURL);
+      });
+    });
+  </script> -->
+  <!-- <style>
+    .boxes {
+      width: 500px;
+      padding-bottom: 15px;
+      
+    }
+    input {
+      width: 250px;
+      padding: 50px;
+    }
+    .qr-code {
+      max-width: 200px;
+      margin-top: 60px;
+      position:absolute;
+      top: 50%;
+      left: 2%;
+      z-index: 2;
+
+    
+    }
+    .inner-image {
+      
+      top: 15px;
+      right: 30px;
+    }
+  
+    .bottom {
+      
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+    }
+   
+
+  </style> -->
+<!-- </body>
+  
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=
+  "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+   integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+   crossorigin="anonymous"
+  />
+  <title>QR Code Generator</title>
+</head>
+<body>
+  
+<div class="container">
+   <div class="container__info">
+     <div class="row">
+       <div class="column">
+        <span><img src="images/allen.jpeg" class="bottom center" style="width: 80px ; padding-top: 10px"></span>
+      </div>
+      <div class="column">
+        <span><img src="images/download.png" align="right" class="bottom center" style="width: 80px ; padding-top: 10px"></span>
+      </div>
+      <img src=
+          "https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+      class="qr-code img-thumbnail img-responsive inner-image center"/>
+     </div>
+   </div>
+   <div class="container__profile">
+    
+    <div class="container__profile__text" style="padding-left: 50px;">
+     <input type="text" placeholder="Full Name" id="full_name" name="full_name">
+     <input type="text" placeholder="Address" id="address" name="address">
+     <input type="text" placeholder="Age." id="age" name="age">
+     <input type="text" placeholder="Phone No." id="phone" name="mobile">
+
+     <div style="padding-top: 10px; padding-left: 55px;">
+
+        <button type="button" class="button button1"
+            id="generate">
+          Generate
+        </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  
+</body>
+<style>
+  $bright-color: #fff;
+  @mixin bottom {
+  position: absolute;
+  right: 0;
+  left: 0;
+  }
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+  background-color: #80afcd;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.4;
+  }
+
+  .container {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 550px;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
+  .container__info {
+    @include bottom;
+    bottom: 20%;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 30px;
+    color: $bright-color;
+    span {
+    margin-right: 20px;
+    }
+    i {
+    margin-right: 10px;
+    }
+  }
+  .container__profile {
+    background-color: #e4f2fd;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    @include bottom();
+    bottom: 0;
+    img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    margin-right: 10px;
+    }
+    h2 {
+    color: #334454;
+    font-size: 1.2rem;
+    }
+    p {
+    color: #a1b2bc;
+    font-size: 0.8rem;
+    }
+    p b {
+    font-style: italic;
+    }
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.qr-code {
+      max-width: 200px;
+      margin: auto;
+      margin-left: 87px;
+  }
+  input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  padding-left: 12px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  
+}
+.button1 {
+  font-size: 10px;
+  
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+</style>
+
+ <script src=
+    "https://code.jquery.com/jquery-3.5.1.js">
+  </script>
+  
+  <script>
+    // Function to HTML encode the text
+    // This creates a new hidden element,
+    // inserts the given text into it 
+    // and outputs it out as HTML
+    function htmlEncode(value) {
+      return $('<div/>').text(value)
+        .html();
+    }
+  
+    $(function () {
+  
+      // Specify an onclick function
+      // for the generate button
+      $('#generate').click(function () {
+  
+        // Generate the link that would be
+        // used to generate the QR Code
+        // with the given data 
+        let finalURL =
+          'https://chart.googleapis.com/chart?cht=qr&chl=' +
+          htmlEncode($('#full_name').val()) + htmlEncode($('#address').val()) + htmlEncode($('#age').val()) + htmlEncode($('#phone').val()) +
+          '&chs=160x160&chld=L|0'
+
+        // Replace the src of the image with
+        // the QR code image
+        $('.qr-code').attr('src', finalURL);
+      });
+    });
+  </script>
+</html>
