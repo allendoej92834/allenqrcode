@@ -34,35 +34,37 @@
       class="qr-code img-thumbnail img-responsive inner-image center"/>
      </div>
    </div>
-   <div class="container__profile">
-    <form action="POST" method="submit"></form>
-      <div class="container__profile__text" style="padding-left: 50px;">
-      <input type="text" placeholder="Full Name" id="full_name" name="full_name" required/>
-      <input type="text" placeholder="Address" id="address" name="address" required/>
-      <input type="text" placeholder="Age." id="age" name="age" required/>
-      <input type="text" placeholder="Phone No." id="phone" name="mobile" required/>
-        </div>
-      </div>
+   <form action="POST" method="submit">
+          <div class="container__profile">
+   
+            <div class="container__profile__text" style="padding-left: 50px;">
+              <input type="text" placeholder="Full Name" id="full_name" name="full_name" required/>
+              <input type="text" placeholder="Address" id="address" name="address" required/>
+              <input type="text" placeholder="Age." id="age" name="age" required/>
+              <input type="text" placeholder="Phone No." id="phone" name="mobile" required/>
+            </div>
+          </div>
 
-    <div class="spancenter" id="hidden">
-      <br>
-      <span class="input">Allen QR Code</span>
-      <br>
-      <span class="output" id="fullnamecopy"></span><br>
-      <span class="output" id="addresscopy"></span><br>
-      <span class="output" id="agecopy"></span><br>
-      <span class="output" id="phonecopy"></span>
-      <br>
-      <span class="out">All Rights Reserved 2022</span>
-    </div> 
-     
+          <div class="spancenter" id="hidden">
+            <br>
+            <span class="input">Allen QR Code</span>
+            <br>
+            <span class="output" id="fullnamecopy"></span><br>
+            <span class="output" id="addresscopy"></span><br>
+            <span class="output" id="agecopy"></span><br>
+            <span class="output" id="phonecopy"></span>
+            <br>
+            <span class="out">All Rights Reserved 2022</span>
+          </div> 
+          
 
-     <div style="padding-left: 100px;">
+          <div style="padding-left: 100px;">
 
-        <button type="submit" onclick="ver()" class="button button1"
-            id="generate">
-          Generate
-        </button>
+              <button type="submit" onclick="ver()" class="button button1"
+                  id="generate">
+                Generate
+              </button>
+      </form>
      </div>
     </div>
    </div>
